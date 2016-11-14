@@ -6,7 +6,7 @@ package ex;
  */
 import java.util.*;
 
-public class ex01 {
+public class ex02 {
 
 	public static void main(String[] args) {
 
@@ -19,8 +19,8 @@ public class ex01 {
 		System.out.println("請輸入要輸入的數字個數?");
 
 		n = scn.nextFloat();
-		
 		System.out.println("請輸入數值");
+
 
 		float s[] = new float[(int) n];
 
@@ -30,7 +30,7 @@ public class ex01 {
 
 		}
 
-		System.out.println(var(s, n));
+		System.out.println(std(var(s, n)));
 
 	}
 
@@ -55,5 +55,9 @@ public class ex01 {
 		return aa / n;
 
 	}
-
+	public static float std(float n){
+		float sum =0;
+		sum= (float) Math.sqrt(n);
+		return sum;
+	}
 }
